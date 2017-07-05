@@ -20,9 +20,9 @@
         <link href="DataTables/datatables.min.css" rel="stylesheet" type="text/css">
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>     
-    <body> 
+    <body>          
         <!-- Main jumbotron for a primary marketing message or call to action -->         
-        <nav class="navbar navbar-inverse navbar-fixed-top" id="nav1" data-pgc="nBar"> 
+        <nav class="navbar navbar-inverse navbar-fixed-top" data-pgc-define="nBar" data-pgc-define-name="tolapp navbar" id="nav1"> 
             <div class="navbar-header"> 
                 <button class="navbar-toggle" data-toggle="collapse" data-target="#nav2"> 
                     <span class="sr-only">Toggle navigation</span> 
@@ -57,26 +57,6 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right"> 
                     <li class="dropdown"> 
-                        <a href="#" data-toggle="dropdown"><i class="fa fa-lg changes-badge fa-bell"></i><span class="badge">2</span><b class="caret"></b></a> 
-                        <ul class="dropdown-menu dropdown-changes dropdown-menu-right" role="menu" aria-labelledby="dLabel">
-                            <div class="container-fluid">
-                                <a class="btn btn-block btn-default" href="#">View notifcations ></a>
-                            </div>                             
-                            <li role="presentation">
-</li>
-                            <li role="presentation" class="dropdown-header">Recent changes that affect you:</li>                             
-                            <li class="divider">List item</li>
-                            <li role="presentation">
-                                <a role="menuitem" tabindex="-1" href="#">New dim</a>
-                            </li>
-                            <li role="presentation">
-                                <a role="menuitem" tabindex="-1" href="#">Modified dim</a>
-                            </li>
-                            <li role="presentation">
-</li>
-                        </ul>                         
-                    </li>
-                    <li class="dropdown"> 
                         <a href="#" data-toggle="dropdown"><i class="fa fa-exchange fa-lg changes-badge"></i><span class="badge">3</span><b class="caret"></b></a> 
                         <ul class="dropdown-menu dropdown-changes dropdown-menu-right" role="menu" aria-labelledby="dLabel">
                             <div class="container-fluid">
@@ -84,7 +64,7 @@
                             </div>                             
                             <li role="presentation">
 </li>
-                            <li role="presentation" class="dropdown-header">Uncomitted changes in this session:</li>                             
+                            <li role="presentation" class="dropdown-header">Uncomitted changes:</li>                             
                             <li class="divider">List item</li>
                             <li role="presentation">
                                 <a role="menuitem" tabindex="-1" href="#">New dim</a>
@@ -108,12 +88,28 @@
                             </li>                             
                         </ul>                         
                     </li>                     
-                </ul>                 
+                </ul>                                  
             </div>             
         </nav>
         <div class="container"> 
             <!-- Example row of columns -->             
-            <footer data-pgc="tol-app-footer"> 
+            <div class="row"> 
+                <h2>New changes</h2>
+                <p>Changes made by others that affect your stack ups</p> 
+                <table class="table table-bordered table-hover" id="example"> 
+                    <thead> 
+                        <tr> 
+                            <th>Name</th> 
+                            <th>Position</th> 
+                            <th>Office</th> 
+                            <th>Extn.</th> 
+                            <th>Start date</th> 
+                            <th>Salary</th> 
+                        </tr>                         
+                    </thead>                     
+                </table>                 
+            </div>             
+            <footer data-pgc-define="tol-app-footer"> 
                 <hr>
                 <p>© Hamish S 2017</p> 
             </footer>             
